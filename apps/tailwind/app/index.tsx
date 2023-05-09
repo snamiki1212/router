@@ -28,14 +28,14 @@ export default function Page() {
   }, [isPartyTime]);
 
   const textClassNames = clsx(`text-black text-6xl font-bold`, {
-    "animate-spin transition-colors duration-1000": isPartyTime,
+    "animate-spin transition-colors duration-1001": isPartyTime,
     [partyColors[textColor]]: isPartyTime,
   });
 
   const buttonClassNames = clsx(
     "rounded-md bg-indigo-500 mt-6 self-start flex-column flex-shrink",
     {
-      "animate-bounce": isPartyTime,
+      // "animate-bounce": isPartyTime,
     }
   );
 
